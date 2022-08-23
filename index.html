@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalkulator BMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <div class="container">
+            <div class="box shadow">
+                <div class="head text-center mb-5">
+                    <h3>Hallo!, Selamat Datang di Kalkulator BMI!</h3>
+                    <p>Kalkulator ini dapat menghitung dan menunjukkan kategori badan kamu! Isi data di bawah ya!
+                    </p>
+                </div>
+                <form action="" method="get" id="myForm">
+                    <div class="row mb-3">
+                        <div class="col-sm mb-3">
+                            <input type="text" class="form-control nama" id="inputNama" placeholder="Nama">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm mb-3">
+                            <input type="number" class="form-control umur" id="inputUmur" placeholder="Umur">
+                        </div>
+                        <div class="col-sm mb-3">
+                            <input type="number" class="form-control berat-badan" id="beratBadan"
+                                placeholder="Berat Badan (KG)">
+                        </div>
+                    </div>
+                    <div class="row  mb-5">
+                        <div class="col-sm mb-3">
+                            <input type="number" class="form-control tinggi-badan" id="tinggiBadan"
+                                placeholder="Tinggi Badan (CM)">
+                        </div>
+                        <div class="col-sm mb-3">
+                            <button type="button" class="btn form-control btn-hitung" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Hitung</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="footer text-center">
+                        <p>Kalkulator sederhana ini dibuat oleh <br><a
+                                href="https://www.instagram.com/fetch.then.irsyad/" target="_blank"
+                                style="color: salmon ;">Irsyad Murfid Kusuma</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hasil Perhitungan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <ul class="list-group">
+                        <li class="list-group-item"><strong>Nama : </strong> Irsyad</li>
+                        <li class="list-group-item"><strong>Umur : </strong> 19</li>
+                        <li class="list-group-item"><strong>Hasil : </strong> 27.4</li>
+                        <li class="list-group-item"><strong>Kategori : </strong>Kurus</li>
+                        <li class="list-group-item"><strong>Tips : </strong> Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Ab, nemo?</li>
+                    </ul> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-reset" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- sweatalert2 -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
